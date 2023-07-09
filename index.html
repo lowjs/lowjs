@@ -1,48 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My CV</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>John Doe's CV</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      padding-top: 20px;
+      padding-bottom: 40px;
+    }
+    .navbar {
+      margin-bottom: 20px;
+    }
+    .jumbotron {
+      text-align: center;
+      background-color: transparent;
+    }
+    .jumbotron .btn {
+      padding: 14px 24px;
+      font-size: 21px;
+    }
+    .featurette-divider {
+      margin: 80px 0;
+    }
+    .featurette-heading {
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>John Doe</h1>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">John Doe</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main role="main">
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-4">John Doe</h1>
         <p>Email: john.doe@example.com</p>
-        <p>Professional software developer with 5+ years of experience in web development.</p>
-    </header>
+        <p>Software developer with 5+ years of experience in web development.</p>
+        <p>
+          <a class="btn btn-primary btn-lg" href="#contact" role="button">Contact me &raquo;</a>
+        </p>
+      </div>
+    </div>
 
-    <section>
-        <h2>Education</h2>
-        <p>B.Sc in Computer Science, University X, 2018</p>
-    </section>
-
-    <section>
-        <h2>Skills</h2>
-        <ul>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12" id="skills">
+          <h2 class="featurette-heading">Skills</h2>
+          <ul>
             <li>Python</li>
             <li>Java</li>
             <li>JavaScript</li>
-        </ul>
-    </section>
+          </ul>
+        </div>
 
-    <section>
-        <h2>Experience</h2>
-        <p>Software Developer at Company Y, 2018-present</p>
-    </section>
+        <hr class="featurette-divider">
 
-    <section>
-        <h2>Projects</h2>
-        <p><a href="https://github.com/username/project">Project Z</a></p>
-    </section>
+        <div class="col-md-12" id="experience">
+          <h2 class="featurette-heading">Experience</h2>
+          <p>Software Developer at Company Y, 2018-present</p>
+        </div>
 
-    <section>
-        <h2>Certifications</h2>
-        <p>Certified Python Developer</p>
-    </section>
+        <hr class="featurette-divider">
 
-    <section>
-        <h2>Interests</h2>
-        <p>Photography, Reading</p>
-    </section>
+        <div class="col-md-12" id="education">
+          <h2 class="featurette-heading">Education</h2>
+          <p>B.Sc in Computer Science, University X, 2018</p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="col-md-12" id="projects">
+          <h2 class="featurette-heading">Projects</h2>
+          <p><a href="https://github.com/username/project">Project Z</a></p>
+        </div>
+
+        <hr class="featurette-divider">
+      </div>
+    </div>
+  </main>
+
+  <footer class="container">
+    <p>&copy; John Doe 2023</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+</html>
+
 </html>
